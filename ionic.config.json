@@ -1,0 +1,7 @@
+{
+  "name": "myAppFire",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
