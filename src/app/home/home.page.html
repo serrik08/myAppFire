@@ -1,20 +1,27 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>home</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-button fill="solid" expand="block" color="primary" (click)="getItems()">Get items</ion-button>
+
+  <ion-button fill="solid" expand="block" color="dark" (click)="addUser(username)">Add User</ion-button>
+
+  <!-- <input type="file" (change)="uploadFile($event)"> -->
+
+  <ion-button slots="end" expand="full" color="dark" (click)="logout()">Loguot</ion-button>
+
 </ion-content>

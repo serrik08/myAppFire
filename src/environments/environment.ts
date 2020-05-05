@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyDSlvUtGMDTvhOxri6OMyZfOJcna_EAawM",
+    authDomain: "tayka-test.firebaseapp.com",
+    databaseURL: "https://tayka-test.firebaseio.com",
+    projectId: "tayka-test",
+    storageBucket: "tayka-test.appspot.com",
+    messagingSenderId: "138725405005",
+    appId: "1:138725405005:web:8306bec483ace8e3ca4704",
+    measurementId: "G-F8B0MVD6G6"
+  }
 };
 
 /*
